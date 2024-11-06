@@ -1,0 +1,155 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.container-fluid {
+	overflow: hidden;
+}
+
+.carousel-indicator {
+	position: absolute;
+	bottom: 2rem;
+	width: 100%;
+	
+	span {
+		font-family: $body-font;
+		font-size: 1rem;
+		font-weight: 700;
+		color: #cdcdcd;
+	}
+	
+	li {
+		width: 2rem;
+		height: 0.17rem;
+		border-radius: 1rem;
+		background-color: #cbd3e3;
+		
+		&.active {
+			background-color: $theme-color;
+		}
+	}
+
+	@include media-breakpoint-down(xl) {
+		display: none;
+	}
+}
+
+// slider items//
+.slick-prev::before, .slick-next:before {
+	 font-size: 3rem;
+	 opacity: 1;
+	 color:#737373;
+
+	 @include media-breakpoint-down(lg) {
+		display: none;
+	}
+ }
+
+ .slick-prev {
+	left:-10rem;
+
+	@media screen and (max-width : 1600px) {
+		left: -2.85rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-next {
+   right: -7rem;
+
+   @media screen and (max-width : 1600px) {
+	   right: -0.5rem;
+   }
+
+   @include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-dots {
+	width: 8rem;
+
+	li {
+		margin-left: 2rem;
+
+		button {
+			&:before {
+				content: "";
+				width: 2.5rem;
+				height: 3px;
+				background-color: $theme-color;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+.banner-list {
+	margin-left: 2rem;
+
+	li {
+		list-style: disc;
+		font-size: 0.875rem;
+		margin-bottom: 0.3rem;
+
+		&::marker {
+			font-size: 1.7rem;
+			margin-top: 1rem;
+			color: $theme-color;
+			vertical-align: middle;
+		}
+	}
+}
+
+
+#subscribe {
+	input{
+		border-bottom: 1px solid $white;
+	}
+
+	label {
+		color: $white;
+		font-size: 0.8rem;
+		display: block;
+		margin-bottom: -1rem;
+	}
+
+	button {
+		font-size: 0.8rem;
+		padding: 1.2rem 2.5rem;
+		font-family: $body-font;
+		font-weight: 700;
+		letter-spacing: 0.05rem;
+
+		i {
+			font-size: 0.9rem;
+			margin-left: 1rem;
+		}
+	}
+}
+
+.video-btn {
+	position: absolute;
+	top: 30%;
+	left: 45%;
+	a {
+		padding: 3rem;
+	}
+}
+
+.service-lists {
+	.slick-dots {
+		display: flex;
+		left: 3rem;
+		bottom: -5rem;
+	}
+}

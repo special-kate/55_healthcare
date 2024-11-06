@@ -1,0 +1,35 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Form: form.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Form Styles
+-----------------------------------------------------------------*/
+#contact {
+	input,select {
+		border-bottom: 1px solid #cdcdcd;
+	}
+
+
+	label {
+		color: $white;
+		display: block;
+		margin-bottom: -1rem;
+		padding-left: 0.8rem;
+	}
+
+	button {
+		font-family: 'Montserrat', sans-serif;;
+		font-size: 1rem;
+		font-weight: 700;
+	}
+}
+
+.emg-btn {
+	font-family: 'Montserrat', sans-serif;;
+	font-size: 1rem;
+	font-weight: 700;
+}
